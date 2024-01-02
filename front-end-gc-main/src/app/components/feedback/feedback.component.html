@@ -1,0 +1,39 @@
+
+  <main class="cd__main">
+    <div class="wrapper">
+      <div class="title">Rate your experience</div>
+      <div class="content">
+        We highly value your feedback! Kindly take a moment to rate your
+        experience and provide us with your valuable feedback about this course.
+      </div>
+      <div class="rate-box">
+
+      <form [formGroup]="formFeedback" (ngSubmit)="handleHumor()" >
+      
+  
+        <input type="radio" name="star" id="star4" formControlName="rating" value="5" />
+        <label class="star" for="star4"></label>
+        <input type="radio" name="star" id="star3" formControlName="rating" value="4" />
+        <label class="star" for="star3"></label>
+        <input type="radio" name="star" id="star2"  formControlName="rating" value="3" />
+        <label class="star" for="star2"></label>
+        <input type="radio" name="star" id="star1" formControlName="rating" value="2" />
+        <label class="star" for="star1" ></label>
+        <input type="radio" name="star" id="star0" formControlName="rating" value="1" checked="checked" />
+        <label class="star" for="star0"></label>
+        
+      <textarea
+        cols="30"
+        rows="6"
+        placeholder="Tell us about your experience!"
+        formControlName="messageFeedback"
+      ></textarea>
+      <button class="submit-btn" type="submit">Send</button>
+      </form>
+      
+    </div>
+
+      
+      
+    </div>
+  </main>
